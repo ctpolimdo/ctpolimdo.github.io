@@ -1,0 +1,54 @@
+<!--
+
+Author : Alsaskar Mirando
+Developer : Alsaskar Mirando
+Blog : https://medium.com/@alsaskar
+Instagram : @alsaskar
+
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Connecting Time QR Code</title>
+	<link rel="stylesheet" type="text/css" href="assets/library/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/library/styles/home.css">
+	<link rel="stylesheet" type="text/css" href="assets/library/fontawesome/css/all.min.css">
+	<link rel="shortcut icon" href="assets/images/logo_aog.png">
+
+	<!-- Meta Tag SEO -->
+	<meta name="author" content="Alsaskar Mirando">
+    <meta name="description" content="Connecting Time dibuat oleh suatu komunitas yang berupa event yang di dalamnya kita saling mengenal dan saling membangun satu sama lain lewat persahabatan yang didasari oleh kasih Kristus...">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@ctpolimdo">
+    <meta name="twitter:creator" content="@alsaskar">
+    <meta name="twitter:title" content="Connecting Time - Politeknik Negeri Manado">
+    <meta name="twitter:url" content="http://ctpolimdo.github.io/">
+    <meta name="twitter:description" content="Connecting Time dibuat oleh suatu komunitas yang berupa event yang di dalamnya kita saling mengenal dan saling membangun satu sama lain lewat persahabatan yang didasari oleh kasih Kristus...">
+    <meta name="twitter:image:src" content="http://ctpolimdo.github.io/assets/images/logo_aog.png">
+
+    <meta property="og:title" content="Connecting Time - Politeknik Negeri Manado" />
+    <meta property="og:description" content="Connecting Time dibuat oleh suatu komunitas yang berupa event yang di dalamnya kita saling mengenal dan saling membangun satu sama lain lewat persahabatan yang didasari oleh kasih Kristus..."/>
+    <meta property="og:image" content="http://ctpolimdo.github.io/assets/images/logo_aog.png">
+</head>
+<body>
+
+	<div class="container" style="margin-top: 2%;">
+		<h2 align="center">QR Code - Connecting Time</h2><br>
+		<center><div id="qrcode"></div></center>
+	</div>
+
+	<script type="text/javascript" src="assets/library/bootstrap/js/jquery-3.2.1.slim.min.js"></script>
+	<script type="text/javascript" src="assets/library/bootstrap/js/popper.min.js"></script>
+	<script type="text/javascript" src="assets/library/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/library/jquery_qrcode/jquery-qrcode-0.17.0.min.js"></script>
+
+	<script type="text/javascript">
+		$('#qrcode canvas').remove();
+		$('#qrcode').qrcode({
+		    render: 'canvas',
+		    text: 'https://ctpolimdo.github.io'
+	   });
+	</script>
+</body>
+</html>
